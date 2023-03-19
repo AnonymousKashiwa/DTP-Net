@@ -56,18 +56,18 @@ Our code is based on Python3.6. There are a few dependencies to run the code. Th
 `cd ~/DTP-Net-master/code/`
 
 * To run DTP-Net model, execute the command below:  
-`python main.py`
+`python preddiffusion_temporal_att_gcn_hisflowL1.py`
 
-* To perform experiments in different settings, users can change the parameters in the file of Param.py as follows:  
-  - **shared\_layer.** Specify layers for parameter-shared ConvLSTM, default = 1.  
-  - **gcn\_layer.** Specify layers for semantic GCN, default = 1.  
-  - **convlstm\_filter/convlstm\_ks.** Specify the number/size of kernel for parameter-shared ConvLSTM, default = 32/3.  
-  - **local\_window.** Specify the window size of local transition descriptor, default = 5.  
-  - **mse\_weight/mape\_weight.** Specify the weight of different components in loss function, default = 1e8/1.  
-  - **GCN/MultiTask.** Define whether to include semantic GCN/multitask learning module in the model structure, default is True.  
-  - **Descriptor.** Define the method to generate the raw feature for each grid, default is local.  
-  - **AdjType.** Define the method to generate the adjacency matrix for semantic GCN, default is semantic.  
-  - **LEARN.** Specify the learning rate, default = 0.001.  
-  - **BATCHSIZE.** Specify the batch size, default = 1.  
-  - **EPOCH.** Specify the maximum of epoch for training, default = 200.  
+;* To perform experiments in different settings, users can change the parameters in the file of Param.py as follows:  
+;  - **shared\_layer.** Specify layers for parameter-shared ConvLSTM, default = 1.  
+;  - **gcn\_layer.** Specify layers for semantic GCN, default = 1.  
+;  - **convlstm\_filter/convlstm\_ks.** Specify the number/size of kernel for parameter-shared ConvLSTM, default = 32/3.  
+;  - **local\_window.** Specify the window size of local transition descriptor, default = 5.  
+;  - **mse\_weight/mape\_weight.** Specify the weight of different components in loss function, default = 1e8/1.  
+;  - **GCN/MultiTask.** Define whether to include semantic GCN/multitask learning module in the model structure, default is True.  
+;  - **Descriptor.** Define the method to generate the raw feature for each grid, default is local.  
+;  - **AdjType.** Define the method to generate the adjacency matrix for semantic GCN, default is semantic.  
+;  - **LEARN.** Specify the learning rate, default = 0.001.  
+;  - **BATCHSIZE.** Specify the batch size, default = 1.  
+;  - **EPOCH.** Specify the maximum of epoch for training, default = 200.  
 
